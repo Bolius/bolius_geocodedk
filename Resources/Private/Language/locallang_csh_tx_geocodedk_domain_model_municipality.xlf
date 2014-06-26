@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-18T09:59:46Z" product-name="geocodedk">
+		<header/>
+		<body>
+
+			<trans-unit id="district_number.description">
+				<source>districtNumber</source>
+			</trans-unit>
+			<trans-unit id="district_name.description">
+				<source>districtName</source>
+			</trans-unit>
+			<trans-unit id="municipality_number.description">
+				<source>municipalityNumber</source>
+			</trans-unit>
+			<trans-unit id="municipality_name.description">
+				<source>municipalityName</source>
+			</trans-unit>
+			<trans-unit id="zipcode.description">
+				<source>zipcode</source>
+			</trans-unit>
+			<trans-unit id="city_name.description">
+				<source>cityName</source>
+			</trans-unit>
+			<trans-unit id="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

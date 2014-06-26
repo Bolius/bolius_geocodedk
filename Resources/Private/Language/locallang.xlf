@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-18T09:59:46Z" product-name="geocodedk">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_geocodedk_domain_model_municipality">
+				<source>Municipality</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.district_number">
+				<source>districtNumber</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.district_name">
+				<source>districtName</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.municipality_number">
+				<source>municipalityNumber</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.municipality_name">
+				<source>municipalityName</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.zipcode">
+				<source>zipcode</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.city_name">
+				<source>cityName</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.latitude">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_geocodedk_domain_model_municipality.longitude">
+				<source>longitude</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>
