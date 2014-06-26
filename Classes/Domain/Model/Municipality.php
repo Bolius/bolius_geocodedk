@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\Geocodedk\Domain\Model;
+namespace Bolius\BoliusGeocodedk\Domain\Model;
 
 /***************************************************************
  *  Copyright notice

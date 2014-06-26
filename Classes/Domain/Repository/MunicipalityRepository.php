@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\Geocodedk\Domain\Repository;
+namespace Bolius\BoliusGeocodedk\Domain\Repository;
 
 /***************************************************************
  *  Copyright notice
@@ -39,7 +39,7 @@ class MunicipalityRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 	 * @param double $latitude
 	 * @param double $longitude
 	 * @throws InvalidArgumentException in case parameters are not numeric
-	 * @return \TYPO3\Geocodedk\Domain\Model\Municipality
+	 * @return \Bolius\BoliusGeocodedk\Domain\Model\Municipality
 	 */
 	public function getMunicipality($latitude, $longitude) {
 

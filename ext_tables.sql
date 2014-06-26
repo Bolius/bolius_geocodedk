@@ -1,7 +1,7 @@
 #
-# Table structure for table 'tx_geocodedk_domain_model_municipality'
+# Table structure for table 'tx_boliusgeocodedk_domain_model_municipality'
 #
-CREATE TABLE tx_geocodedk_domain_model_municipality (
+CREATE TABLE tx_boliusgeocodedk_domain_model_municipality (
 
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,

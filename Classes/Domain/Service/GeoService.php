@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\Geocodedk\Domain\Service;
+namespace Bolius\BoliusGeocodedk\Domain\Service;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
@@ -38,7 +38,7 @@ class GeoService extends \TYPO3\CMS\Core\Service\AbstractService {
 	/**
 	 * municipalityRepository
 	 *
-	 * @var \TYPO3\Geocodedk\Domain\Repository\MunicipalityRepository
+	 * @var \Bolius\BoliusGeocodedk\Domain\Repository\MunicipalityRepository
 	 * @inject
 	 */
 	protected $municipalityRepository;
@@ -50,7 +50,7 @@ class GeoService extends \TYPO3\CMS\Core\Service\AbstractService {
 	 *
 	 * @param double $latitude
 	 * @param double $longitude
-	 * @return \TYPO3\Geocodedk\Domain\Model\Municipality or false
+	 * @return \Bolius\BoliusGeocodedk\Domain\Model\Municipality or false
 	 */
 	public function getMunicipality($lat, $lng) {
 		if (is_numeric($lat) && is_numeric($lng)) {
@@ -66,7 +66,7 @@ class GeoService extends \TYPO3\CMS\Core\Service\AbstractService {
 	 * Returns the closest municipal to the given IP
 	 * 
 	 * @param string $ip
-	 * @return \TYPO3\Geocodedk\Domain\Model\Municipality or false
+	 * @return \Bolius\BoliusGeocodedk\Domain\Model\Municipality or false
 	 */
 	public function getMunicipalityByIp($ip) {
 

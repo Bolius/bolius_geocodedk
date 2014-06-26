@@ -1,10 +1,10 @@
 #
-# Table structure for table tx_geocodedk_domain_model_municipality
+# Table structure for table tx_boliusgeocodedk_domain_model_municipality
 #
 
-DROP TABLE IF EXISTS `tx_geocodedk_domain_model_municipality`;
+DROP TABLE IF EXISTS `tx_boliusgeocodedk_domain_model_municipality`;
 
-CREATE TABLE `tx_geocodedk_domain_model_municipality` (
+CREATE TABLE `tx_boliusgeocodedk_domain_model_municipality` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
   `pid` int(11) NOT NULL DEFAULT '0',
   `district_number` int(11) NOT NULL DEFAULT '0',
@@ -41,10 +41,10 @@ CREATE TABLE `tx_geocodedk_domain_model_municipality` (
   KEY `language` (`l10n_parent`,`sys_language_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-LOCK TABLES `tx_geocodedk_domain_model_municipality` WRITE;
-/*!40000 ALTER TABLE `tx_geocodedk_domain_model_municipality` DISABLE KEYS */;
+LOCK TABLES `tx_boliusgeocodedk_domain_model_municipality` WRITE;
+/*!40000 ALTER TABLE `tx_boliusgeocodedk_domain_model_municipality` DISABLE KEYS */;
 
-INSERT INTO `tx_geocodedk_domain_model_municipality` (`uid`, `pid`, `district_number`, `district_name`, `municipality_number`, `municipality_name`, `zipcode`, `city_name`, `latitude`, `longitude`, `tstamp`, `crdate`, `cruser_id`, `deleted`, `hidden`, `starttime`, `endtime`, `t3ver_oid`, `t3ver_id`, `t3ver_wsid`, `t3ver_label`, `t3ver_state`, `t3ver_stage`, `t3ver_count`, `t3ver_tstamp`, `t3ver_move_id`, `t3_origuid`, `sys_language_uid`, `l10n_parent`, `l10n_diffsource`)
+INSERT INTO `tx_boliusgeocodedk_domain_model_municipality` (`uid`, `pid`, `district_number`, `district_name`, `municipality_number`, `municipality_name`, `zipcode`, `city_name`, `latitude`, `longitude`, `tstamp`, `crdate`, `cruser_id`, `deleted`, `hidden`, `starttime`, `endtime`, `t3ver_oid`, `t3ver_id`, `t3ver_wsid`, `t3ver_label`, `t3ver_state`, `t3ver_stage`, `t3ver_count`, `t3ver_tstamp`, `t3ver_move_id`, `t3_origuid`, `sys_language_uid`, `l10n_parent`, `l10n_diffsource`)
 VALUES
 	(1,0,1081,'Region Nordjylland',773,'Morsø Kommune',7900,'Nykøbing M',56.83,8.80,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,NULL),
 	(2,0,1081,'Region Nordjylland',773,'Morsø Kommune',7950,'Erslev',56.85,8.71,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,NULL),
@@ -1475,7 +1475,7 @@ VALUES
 	(1427,0,1085,'Region Sjælland',390,'Vordingborg Kommune',4792,'Askeby',54.91,12.16,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,NULL),
 	(1428,0,1085,'Region Sjælland',390,'Vordingborg Kommune',4793,'Bogø By',54.93,12.04,0,0,0,0,0,0,0,0,0,0,'',0,0,0,0,0,0,0,0,NULL);
 
-/*!40000 ALTER TABLE `tx_geocodedk_domain_model_municipality` ENABLE KEYS */;
+/*!40000 ALTER TABLE `tx_boliusgeocodedk_domain_model_municipality` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

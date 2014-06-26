@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\Geocodedk\Controller;
+namespace Bolius\BoliusGeocodedk\Controller;
 
 /***************************************************************
  *  Copyright notice
@@ -36,7 +36,7 @@ class MunicipalityController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCon
 	/**
 	 * municipalityRepository
 	 *
-	 * @var \TYPO3\Geocodedk\Domain\Repository\MunicipalityRepository
+	 * @var \Bolius\BoliusGeocodedk\Domain\Repository\MunicipalityRepository
 	 * @inject
 	 */
 	protected $municipalityRepository;

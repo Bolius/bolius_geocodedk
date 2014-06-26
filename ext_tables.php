@@ -3,13 +3,13 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Geocode Denmark');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Bolius Geocode Denmark');
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_geocodedk_domain_model_municipality', 'EXT:geocodedk/Resources/Private/Language/locallang_csh_tx_geocodedk_domain_model_municipality.xlf');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_geocodedk_domain_model_municipality');
-$TCA['tx_geocodedk_domain_model_municipality'] = array(
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_boliusgeocodedk_domain_model_municipality', 'EXT:bolius_geocodedk/Resources/Private/Language/locallang_csh_tx_boliusgeocodedk_domain_model_municipality.xlf');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_boliusgeocodedk_domain_model_municipality');
+$TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
 	'ctrl' => array(
-		'title'	=> 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality',
+		'title'	=> 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality',
 		'label' => 'district_number',
 		'tstamp' => 'tstamp',
 		'crdate' => 'crdate',
@@ -32,7 +32,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'searchFields' => 'district_number,district_name,municipality_number,municipality_name,zipcode,city_name,latitude,longitude,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Municipality.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_geocodedk_domain_model_municipality.gif'
+		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_boliusgeocodedk_domain_model_municipality.gif'
 	),
 );
 

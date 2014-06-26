@@ -3,8 +3,8 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-$TCA['tx_geocodedk_domain_model_municipality'] = array(
-	'ctrl' => $TCA['tx_geocodedk_domain_model_municipality']['ctrl'],
+$TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
+	'ctrl' => $TCA['tx_boliusgeocodedk_domain_model_municipality']['ctrl'],
 	'interface' => array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, district_number, district_name, municipality_number, municipality_name, zipcode, city_name, latitude, longitude',
 	),
@@ -38,8 +38,8 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 				'items' => array(
 					array('', 0),
 				),
-				'foreign_table' => 'tx_geocodedk_domain_model_municipality',
-				'foreign_table_where' => 'AND tx_geocodedk_domain_model_municipality.pid=###CURRENT_PID### AND tx_geocodedk_domain_model_municipality.sys_language_uid IN (-1,0)',
+				'foreign_table' => 'tx_boliusgeocodedk_domain_model_municipality',
+				'foreign_table_where' => 'AND tx_boliusgeocodedk_domain_model_municipality.pid=###CURRENT_PID### AND tx_boliusgeocodedk_domain_model_municipality.sys_language_uid IN (-1,0)',
 			),
 		),
 		'l10n_diffsource' => array(
@@ -98,7 +98,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'district_number' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.district_number',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.district_number',
 			'config' => array(
 				'type' => 'input',
 				'size' => 4,
@@ -107,7 +107,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'district_name' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.district_name',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.district_name',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -116,7 +116,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'municipality_number' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.municipality_number',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.municipality_number',
 			'config' => array(
 				'type' => 'input',
 				'size' => 4,
@@ -125,7 +125,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'municipality_name' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.municipality_name',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.municipality_name',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -134,7 +134,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'zipcode' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.zipcode',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.zipcode',
 			'config' => array(
 				'type' => 'input',
 				'size' => 4,
@@ -143,7 +143,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'city_name' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.city_name',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.city_name',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -152,7 +152,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'latitude' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.latitude',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.latitude',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -161,7 +161,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'longitude' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.longitude',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.longitude',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -170,7 +170,7 @@ $TCA['tx_geocodedk_domain_model_municipality'] = array(
 		),
 		'distance' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:geocodedk/Resources/Private/Language/locallang_db.xlf:tx_geocodedk_domain_model_municipality.distance',
+			'label' => 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality.distance',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
