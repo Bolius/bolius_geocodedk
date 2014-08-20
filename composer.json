@@ -12,6 +12,6 @@
 	],
 	"require": {
 		"typo3/cms-core": ">=6.0.*",
-		"geoip": ">=1.0.*"
+		"bolius/bolius_geoip": ">=1.1.*"
 	}
 }

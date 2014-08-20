@@ -32,7 +32,7 @@ Supplies accuracy at zip code level.',
 	'version' => '0.1.0',
 	'constraints' => array(
 		'depends' => array(
-			'geoip' => '1.0',
+			'bolius_geoip' => '1.1',
 			'extbase' => '6.0',
 			'fluid' => '6.0',
 			'typo3' => '6.0',

@@ -81,9 +81,9 @@ class GeoService extends \TYPO3\CMS\Core\Service\AbstractService {
 
 	public function geoCodeIp($ip) {
 		// use geo ip if loaded
-		if (ExtensionManagementUtility::isLoaded('geoip')) {
-			require_once(  ExtensionManagementUtility::extPath('geoip').'/pi1/class.tx_geoip_pi1.php');
-			$this->media = GeneralUtility::makeInstance('tx_geoip_pi1');
+		if (ExtensionManagementUtility::isLoaded('bolius_geoip')) {
+			require_once(  ExtensionManagementUtility::extPath('bolius_geoip').'/pi1/class.tx_boliusgeoip_pi1.php');
+			$this->media = GeneralUtility::makeInstance('tx_boliusgeoip_pi1');
 
 			// Use the database in the Resources folder
 			$path = GeneralUtility::getFileAbsFileName("EXT:geocodedk/Resources/Private/Databases/GeoLiteCity.dat");
