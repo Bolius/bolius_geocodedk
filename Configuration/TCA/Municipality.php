@@ -45,7 +45,7 @@ $TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, district_number, district_name, municipality_number, municipality_name, zipcode, city_name, latitude, longitude',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, district_number, district_name, municipality_number, municipality_name, zipcode, city_name, latitude, longitude,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, district_number, district_name, municipality_number, municipality_name, zipcode, city_name, latitude, longitude,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
