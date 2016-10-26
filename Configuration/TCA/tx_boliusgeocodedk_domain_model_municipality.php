@@ -1,14 +1,4 @@
 <?php
-if (!defined ('TYPO3_MODE')) {
-	die ('Access denied.');
-}
-
-$_EXTKEY = $GLOBALS['_EXTKEY'] = 'bolius_geocodedk';
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Bolius Geocode Denmark');
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_boliusgeocodedk_domain_model_municipality', 'EXT:bolius_geocodedk/Resources/Private/Language/locallang_csh_tx_boliusgeocodedk_domain_model_municipality.xlf');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_boliusgeocodedk_domain_model_municipality');
 $TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
 	'ctrl' => array(
 		'title'	=> 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality',
