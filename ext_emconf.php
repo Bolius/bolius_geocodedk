@@ -33,9 +33,9 @@ Supplies accuracy at zip code level.',
 	'constraints' => array(
 		'depends' => array(
 			'bolius_geoip' => '1.1',
-			'extbase' => '6.0',
-			'fluid' => '6.0',
-			'typo3' => '6.0',
+			'extbase' => '6.0.0-7.6.99',
+			'fluid' => '6.0.0-7.6.99',
+			'typo3' => '6.0.0-7.6.99',
 		),
 		'conflicts' => array(
 		),
