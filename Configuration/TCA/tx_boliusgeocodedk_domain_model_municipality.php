@@ -1,4 +1,5 @@
 <?php
+
 $TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
 	'ctrl' => array(
 		'title'	=> 'LLL:EXT:bolius_geocodedk/Resources/Private/Language/locallang_db.xlf:tx_boliusgeocodedk_domain_model_municipality',
@@ -23,8 +24,7 @@ $TCA['tx_boliusgeocodedk_domain_model_municipality'] = array(
 			'endtime' => 'endtime',
 		),
 		'searchFields' => 'district_number,district_name,municipality_number,municipality_name,zipcode,city_name,latitude,longitude,',
-		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Municipality.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_boliusgeocodedk_domain_model_municipality.gif'
+		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('bolius_geocodedk') . 'Resources/Public/Icons/tx_boliusgeocodedk_domain_model_municipality.gif'
 	),
 );
 
