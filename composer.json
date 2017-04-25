@@ -3,7 +3,7 @@
 	"type": "typo3-cms-extension",
 	"description": "Provides a fast geocoding of coordinates in Denmark",
 	"license": ["GPL-2.0+"],
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"authors": [
 		{
 			"name": "Bolius Online",
@@ -11,7 +11,7 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=6.0.*",
-		"bolius/bolius_geoip": ">=1.1.*"
+		"typo3/cms-core": ">=6.2.*",
+		"bolius/bolius_geoip": ">=1.2.*"
 	}
 }
